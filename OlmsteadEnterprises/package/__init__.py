@@ -1,9 +1,18 @@
 from flask import Flask
-
-
+from flask_sqlalchemy import SQLAlchemy
+from flask_bcrypt import Bcrypt
+from flask_login import LoginManager
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'c56bec1880b567d61b7cdd462cc2060a'
 
+app.config['SECRET_KEY'] = 'aicuhaldivhsldviuh38ry28fchwe9'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+app.config['SQL_TRACK_MODIFICATIONS'] = False
 
-from package.routes import routes
+db = SQLAlchemy(app)
+bcrypt = Bcrypt(app)
+login_manager = LoginManager(app)
+login_manager.login_view = 'login'
+login_manager.login_message_category = 'info'
+
+from package import routes

@@ -1,0 +1,34 @@
+{% extends "template.html" %}
+{% block html_body %}
+    <div class="container" align="center">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    </div>
+    <br>
+    <div class="container" align="center">
+    <h1 class="text-dark">{{ fname }}'s Profile</h1>
+    <div class="container" align="center">
+        <div class="card border border-dark" align="center">
+            <div class="card-body">
+                <h3 class="text-info">Name: {{ fname }} {{ lname }}</h3>
+                <h3 class="text-info">Username: {{ username }}</h3>
+                <h3 class="text-info">Favorite Book: </h3>
+                <h3 class="text-info">Favorite Fandom: </h3>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Footer -->
+    <footer class="text-light" style="bottom: 0; position: fixed; width: 100%; height: 10%; background-color: #01579b;">
+        <div class="container" align="center">
+            <p class="text-light">FandomNerds.com</p>
+        </div>
+    </footer>
+{% endblock %}

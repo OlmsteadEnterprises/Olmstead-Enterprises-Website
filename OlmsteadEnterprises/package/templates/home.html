@@ -1,0 +1,164 @@
+{% extends "template.html" %}
+{% block html_body %}
+    <br><br>
+    <h1 class="text-dark" align="center">Welcome to Fandom Nerds</h1>
+    <br><br>
+    <div class="container" align="center" style="width: 35%;">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 border border-dark rounded">
+                <div class="d-flex">
+                    <div class="p-4 align-self-start">
+                        <i class="fas fa-check fa-2x"></i>
+                    </div>
+                    <div class="p-4 align-self-end">
+                        Personal Finance Coaching
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="p-4 align-self-start">
+                        <i class="fas fa-check fa-2x"></i>
+                    </div>
+                    <div class="p-4 align-self-end">
+                        Stock Market Investment Strategies and Training
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="p-4 align-self-start">
+                        <i class="fas fa-check fa-2x"></i>
+                    </div>
+                    <div class="p-4 align-self-end">
+                        The goal of this site is to help individuals and families become financially independent,
+                        learn how to manage their investments, how to invest in real estate and/or the stock market,
+                        and how to earn passive income that will exceed all of your expenses.
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="p-4 align-self-start">
+                        <i class="fas fa-check fa-2x"></i>
+                    </div>
+                    <div class="p-4 align-self-end">
+                        Please subscribe with your email address to receive updates on new offers!
+                    </div>
+                </div>
+            </div>
+            <!-- Row 2 -->
+            {% if current_user.is_authenticated %}
+                <div class="col-lg-5">
+                    <div class="card border border-dark text-center card-form">
+                        <div class="card-body">
+                            <h3 class="text-dark" align="center">Comming Soon</h3><br>
+                            <p class="ml-5" align="left">Over 100 Books and Novels!</p><br>
+                            <p class="ml-5" align="left">Forum for users to read and write fan fiction!</p><br>
+                        </div>
+                    </div>
+                </div>
+            {% else %}
+                <div class="col-lg-5">
+                    <div class="card border border-dark rounded text-center card-form">
+                        <div class="card-body">
+                            <form action="" method="post">
+                                {{ form.hidden_tag() }}
+                                <fieldset class="form-group">
+                                    <h2 class="text-dark">Sign Up</h2><br>
+                                    <div class="form-group">
+                                        {% if form.firstname.errors %}
+                                            {{ form.firstname(class='form-control form-control-lg is-invalid') }}
+                                            <div class="invalid-feedback" align="center">
+                                                {% for error in form.firstname.errors %}
+                                                    {{ error }}
+                                                {% endfor %}
+                                            </div>
+                                        {% else %}
+                                            {{ form.firstname(class='form-control form-control-lg') }}
+                                        {% endif %}
+                                    </div>
+                                    <div class="form-group">
+                                        {% if form.lastname.errors %}
+                                            {{ form.lastname(class='form-control form-control-lg is-invalid') }}
+                                            <div class="invalid-feedback" align="center">
+                                                {% for error in form.lastname.errors %}
+                                                    {{ error }}
+                                                {% endfor %}
+                                            </div>
+                                        {% else %}
+                                            {{ form.lastname(class='form-control form-control-lg') }}
+                                        {% endif %}
+                                    </div>
+                                    <div class="form-group">
+                                        {% if form.username.errors %}
+                                            {{ form.username(class='form-control form-control-lg is-invalid') }}
+                                            <div class="invalid-feedback" align="center">
+                                                {% for error in form.username.errors %}
+                                                    {{ error }}
+                                                {% endfor %}
+                                            </div>
+                                        {% else %}
+                                            {{ form.username(class='form-control form-control-lg') }}
+                                        {% endif %}
+                                    </div>
+                                    <div class="form-group">
+                                        {% if form.email.errors %}
+                                            {{ form.email(class='form-control form-control-lg is-invalid') }}
+                                            <div class="invalid-feedback" align="center">
+                                                {% for error in form.email.errors %}
+                                                    {{ error }}
+                                                {% endfor %}
+                                            </div>
+                                        {% else %}
+                                            {{ form.email(class='form-control form-control-lg') }}
+                                        {% endif %}
+                                    </div>
+                                    <div class="form-group">
+                                        {% if form.password.errors %}
+                                            {{ form.password(class='form-control form-control-lg is-invalid') }}
+                                            <div class="invalid-feedback" align="center">
+                                                {% for error in form.password.errors %}
+                                                    {{ error }}
+                                                {% endfor %}
+                                            </div>
+                                        {% else %}
+                                            {{ form.password(class='form-control form-control-lg') }}
+                                        {% endif %}
+                                    </div>
+                                    <div class="form-group">
+                                        {% if form.confirm_password.errors %}
+                                            {{ form.confirm_password(class='form-control form-control-lg is-invalid') }}
+                                            <div class="invalid-feedback" align="center">
+                                                {% for error in form.confirm_password.errors %}
+                                                    {{ error }}
+                                                {% endfor %}
+                                            </div>
+                                        {% else %}
+                                            {{ form.confirm_password(class='form-control form-control-lg') }}
+                                        {% endif %}
+                                    </div>
+                                    <div class="form-group">
+                                        {{ form.submit(class='btn btn-primary') }}
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <!-- Footer -->
+    <footer class="text-light" style="bottom: 0; position: fixed; width: 100%; height: 10%; background-color: #01579b;">
+        <div class="container" align="center">
+            <p class="text-light">FandomNerds.com</p>
+        </div>
+    </footer>
+{% endblock html_body %}
