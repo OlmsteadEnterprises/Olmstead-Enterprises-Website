@@ -12,6 +12,7 @@ class SignUpForm(FlaskForm):
                              render_kw={"placeholder":"Password: "})
     confirm_password = PasswordField('Confirm Password', validators=[DataRequired(), EqualTo('password')],
                                      render_kw={"placeholder":"Confirm Password: "})
+    terms = BooleanField('Please confirm you are at least 18 years old to sign up!', validators=[DataRequired()])
     submit = SubmitField('Submit')
 
     def validate_email(self, email):

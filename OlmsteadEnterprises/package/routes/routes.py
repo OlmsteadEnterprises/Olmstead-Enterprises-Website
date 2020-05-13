@@ -3,6 +3,7 @@ from flask import render_template, url_for, flash, redirect, request
 from package.forms import SignUpForm, LoginForm
 from package.database import User, Post
 from flask_login import login_user, current_user, logout_user, login_required
+from datetime import date
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -13,18 +14,21 @@ def home():
     form = SignUpForm()
     if form.validate_on_submit():
         hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
-        user = User(firstname=form.firstname.data, lastname=form.lastname.data, username=form.username.data, email=form.email.data, password=hashed_password)
+        user = User(firstname=form.firstname.data, lastname=form.lastname.data, username=form.username.data,
+                    email=form.email.data, password=hashed_password)
         db.session.add(user)
         db.session.commit()
-        #login_user(user)
+        login_user(user)
         flash(f'Your Account has been created!', 'success')
         return redirect(url_for('profile'))
 
     return render_template('home.html', title='Home', form=form)
 
+
 @app.route('/about')
 def about():
     return render_template('about.html', title='About')
+
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -43,12 +47,14 @@ def login():
             flash(f'Login Unsuccessful!  Please check email and password!', 'danger')
     return render_template('login.html', title='Login', form=form)
 
+
 @app.route('/logout')
 @login_required
 def logout():
     logout_user()
     flash(f'You have been logged out!', 'danger')
     return redirect(url_for('login'))
+
 
 @app.route('/profile')
 @login_required
@@ -58,6 +64,7 @@ def profile():
     username = current_user.username
     email = current_user.email
     return render_template("profile.html", fname=fname, lname=lname, username=username, email=email)
+
 
 @app.route('/library', methods=['GET', 'POST'])
 def library():
