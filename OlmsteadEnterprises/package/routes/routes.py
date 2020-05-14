@@ -22,7 +22,7 @@ def home():
         flash(f'Your Account has been created!', 'success')
         return redirect(url_for('profile'))
 
-    return render_template('home.html', title='Home', form=form)
+    return render_template('index.html', title='Home', form=form)
 
 
 @app.route('/about')
