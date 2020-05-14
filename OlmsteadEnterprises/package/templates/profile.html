@@ -11,16 +11,37 @@
         {% endif %}
     {% endwith %}
     </div>
-    <br>
+    <br><br>
     <div class="container" align="center">
     <h1 class="text-dark">{{ fname }}'s Profile</h1>
-    <div class="container" align="center">
+    <div class="container" align="center" style="width: 50%;">
         <div class="card border border-dark" align="center">
             <div class="card-body">
-                <h3 class="text-info">Name: {{ fname }} {{ lname }}</h3>
-                <h3 class="text-info">Username: {{ username }}</h3>
-                <h3 class="text-info">Favorite Book: </h3>
-                <h3 class="text-info">Favorite Fandom: </h3>
+                <div class="d-flex">
+                    <div class="p-4 align-self-start">
+                        <i class="fas fa-user fa-2x"></i>
+                    </div>
+                    <div class="p-4 align-self-end">
+                        <h3 class="text-dark">Name: {{ fname }} {{ lname }}</h3>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="p-4 align-self-start">
+                        <i class="fas fa-user-friends fa-2x"></i>
+                    </div>
+                    <div class="p-4 align-self-end">
+                        <h3 class="text-dark">Username: {{ username }}</h3>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="p-4 align-self-start">
+                        <i class="fas fa-envelope fa-2x"></i>
+                    </div>
+                    <div class="p-4 align-self-end">
+                        <h3 class="text-dark">Email: {{ email }}</h3>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
