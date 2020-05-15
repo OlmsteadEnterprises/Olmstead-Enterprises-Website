@@ -24,6 +24,9 @@ def home():
 
     return render_template('index.html', title='Home', form=form)
 
+@app.route('/investments', methods=['GET', 'POST'])
+def investments():
+    return render_template("investments.html", title='Investments')
 
 @app.route('/about')
 def about():
@@ -63,9 +66,26 @@ def profile():
     lname = current_user.lastname
     username = current_user.username
     email = current_user.email
-    return render_template("profile.html", fname=fname, lname=lname, username=username, email=email)
+    return render_template("profile.html", fname=fname, lname=lname, username=username, email=email, title='Profile')
 
-
-@app.route('/library', methods=['GET', 'POST'])
-def library():
-    return render_template('library.html', title='Library')
+@app.route('/january_cash_flow', methods=['GET', 'POST'])
+def january_cash_flow():
+    return render_template("cash-flow/jan.html", title='January Cash Flow')
+@app.route('/february_cash_flow', methods=['GET', 'POST'])
+def february_cash_flow():
+    return render_template("cash-flow/feb.html", title='February Cash Flow')
+@app.route('/march_cash_flow', methods=['GET', 'POST'])
+def march_cash_flow():
+    return render_template("cash-flow/mar.html", title='March Cash Flow')
+@app.route('/april_cash_flow', methods=['GET', 'POST'])
+def april_cash_flow():
+    return render_template("cash-flow/apr.html", title='April Cash Flow')
+@app.route('/may_cash_flow', methods=['GET', 'POST'])
+def may_cash_flow():
+    return render_template("cash-flow/may.html", title='May Cash Flow')
+@app.route('/june_cash_flow', methods=['GET', 'POST'])
+def june_cash_flow():
+    return render_template("cash-flow/june.html", title='June Cash Flow')
+@app.route('/july_cash_flow', methods=['GET', 'POST'])
+def july_cash_flow():
+    return render_template("cash-flow/july.html", title='July Cash Flow')

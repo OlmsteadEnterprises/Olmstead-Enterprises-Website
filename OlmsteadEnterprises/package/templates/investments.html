@@ -1,0 +1,146 @@
+{% extends "template.html" %}
+{% block html_body %}
+    <h1 class="text-dark" align="center">Company Investments and Assests</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card border border-success rounded">
+                    <div class="card-body">
+                        <h3 class="text-dark" align="center">Stocks</h3>
+                        <h5 class="text-black-50" align="center">Total Portfolio Value - $26,079.23</h5>
+                        <h6 class="text-black-50" align="center">As of 5/14/20</h6><br>
+                        <div class="container" style="width: 100%;">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    Microsoft - 57 Shares
+                                </li>
+                                <li class="list-group-item">
+                                    AT&T - 121.07 Shares
+                                </li>
+                                <li class="list-group-item">
+                                    VOO - 7 Shares
+                                </li>
+                                <li class="list-group-item">
+                                    NDAQ - 21.70 Shares
+                                </li>
+                                <li class="list-group-item">
+                                    GOOGL - 5 Shares
+                                </li>
+                            </ul>
+                            <br>
+                            <small class="text-black-50" align="center">Portfolio value updated on 1st of every month!</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border border-success rounded">
+                    <div class="card-body mb-3">
+                        <h3 class="text-dark" align="center">Real Estate</h3><br>
+                        <h6 class="text-dark" align="center">No current investments in real estate</h6>
+                        <h6 class="text-dark" align="center">Olmstead Enterprises plans to invest in Cardone Capital in late 2020 and 2021</h6>
+                        <br><br><br><br><br><br><br><br><br><br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border border-success rounded">
+                    <div class="card-body mb-3">
+                        <h3 class="text-dark" align="center">Other</h3>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row" style="margin-left: 25%; width: 100%;">
+            <div class="col-lg-6">
+                <div class="card border border-success rounded">
+                    <div class="card-body">
+                        <h3 class="text-dark" align="center">Cash Flow</h3><br>
+                        <table class="table table-striped">
+                            <!-- Row 1 -->
+                            <tr>
+                                <div class="container">
+                                    <td id="table-center">
+                                        <a href="#">January</a>
+                                    </td>
+                                </div>
+                                <div class="container">
+                                    <td id="table-center">
+                                        <a href="#">February</a>
+                                    </td>
+                                </div>
+                                <div class="container">
+                                    <td id="table-center">
+                                        <a href="#">March</a>
+                                    </td>
+                                </div>
+                            </tr>
+                            <!-- Row 2 -->
+                            <tr>
+                                <div class="container">
+                                    <td id="table-center">
+                                        <a href="#">April</a>
+                                    </td>
+                                </div>
+                                <div class="container">
+                                    <td id="table-center">
+                                        <a href="#">May</a>
+                                    </td>
+                                </div>
+                                <div class="container">
+                                    <td id="table-center">
+                                        <a href="#">June</a>
+                                    </td>
+                                </div>
+                            </tr>
+                            <!-- Row 3 -->
+                            <tr>
+                                <div class="container">
+                                    <td id="table-center">
+                                        <a href="#">July</a>
+                                    </td>
+                                </div>
+                                <div class="container">
+                                    <td id="table-center">
+                                        <a href="#">August</a>
+                                    </td>
+                                </div>
+                                <div class="container">
+                                    <td id="table-center">
+                                        <a href="#">September</a>
+                                    </td>
+                                </div>
+                            </tr>
+                            <!-- Row 4 -->
+                            <tr>
+                                <div class="container">
+                                    <td id="table-center">
+                                        <a href="#">October</a>
+                                    </td>
+                                </div>
+                                <div class="container">
+                                    <td id="table-center">
+                                        <a href="#">November</a>
+                                    </td>
+                                </div>
+                                <div class="container">
+                                    <td id="table-center">
+                                        <a href="#">December</a>
+                                    </td>
+                                </div>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <footer class="text-light bg bg-success" style="bottom: 0; position: fixed; width: 100%; height: 10%;">
+        <div class="container" align="center">
+            <p class="text-light">FandomNerds.com</p>
+        </div>
+    </footer>
+{% endblock %}
