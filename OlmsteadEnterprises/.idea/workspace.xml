@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2bf41b9e-50f7-4ee3-ac2f-2eba8dd3f446" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/package/templates/cash-flow/apr.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package/templates/cash-flow/aug.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package/templates/cash-flow/feb.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package/templates/cash-flow/jan.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package/templates/cash-flow/july.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package/templates/cash-flow/june.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package/templates/cash-flow/mar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package/templates/cash-flow/may.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package/templates/cash-flow/nov.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package/templates/cash-flow/oct.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package/templates/cash-flow/sep.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package/templates/investments.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package/routes/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/package/routes/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/package/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/package/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/package/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/package/templates/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/package/templates/template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/templates/investments.html" beforeDir="false" afterPath="$PROJECT_DIR$/package/templates/investments.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1571519885792</updated>
       <workItem from="1589231390775" duration="25123000" />
-      <workItem from="1589511626290" duration="4805000" />
+      <workItem from="1589511626290" duration="5812000" />
     </task>
     <servers />
   </component>
