@@ -3,10 +3,11 @@ from flask import render_template, url_for, flash, redirect, request
 from package.forms import SignUpForm, LoginForm
 from package.database import User, Post
 from flask_login import login_user, current_user, logout_user, login_required
-from datetime import date
+from postgresql import port
+
+
 
 @app.route('/', methods=['GET', 'POST'])
-@app.route('/home', methods=['GET', 'POST'])
 def home():
     if current_user.is_authenticated:
         flash(f'You are logged in as {current_user.username}', 'success')

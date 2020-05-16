@@ -20,12 +20,12 @@
     <!-- Bootstrap Links -->
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark p-3 bg bg-success">
-    <a class="navbar-brand" href="{{ url_for('home') }}" style="padding-left: 20%;">Olmstead Enterprises</a>
+<nav class="navbar navbar-expand-lg navbar-light p-3" style="background-color: #F1F1F1;">
+    <a class="navbar-brand" href="{{ url_for('home') }}" style="padding-left: 19%;">Olmstead Enterprises</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar" style="padding-left: 28%;">
+    <div class="collapse navbar-collapse" id="collapsibleNavbar" style="padding-left: 26%;">
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link" href="{{ url_for('home') }}">Home</a>
@@ -54,7 +54,11 @@
 {% block html_body %}{% endblock %}
 
 <br><br><br>
-
+<footer class="text-light position-absolute" style="width: 100%; height: 10%; background-color: #F1F1F1;">
+    <div class="container" align="center">
+        <p class="text-dark">FandomNerds.com</p>
+    </div>
+</footer>
 <!-- Bootstrap Scripts -->
 <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>

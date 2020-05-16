@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2bf41b9e-50f7-4ee3-ac2f-2eba8dd3f446" name="Default Changelist" comment="" />
+    <list default="true" id="2bf41b9e-50f7-4ee3-ac2f-2eba8dd3f446" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/routes/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/package/routes/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/package/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/package/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/templates/investments.html" beforeDir="false" afterPath="$PROJECT_DIR$/package/templates/investments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/package/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/templates/privacy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/package/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/package/templates/template.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,12 +88,23 @@
       <option name="presentableId" value="Default" />
       <updated>1571519885792</updated>
       <workItem from="1589231390775" duration="25123000" />
-      <workItem from="1589511626290" duration="6542000" />
+      <workItem from="1589511626290" duration="11782000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2855" y="128" key="SettingsEditor" timestamp="1589597649523">
+      <screen x="2560" y="23" width="1920" height="1057" />
+    </state>
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1589556867019" />
+    <state x="2855" y="128" key="SettingsEditor/0.23.2560.1307/2560.23.1920.1057@2560.23.1920.1057" timestamp="1589597649523" />
+    <state x="421" y="82" width="598" height="735" key="find.popup" timestamp="1589599713939">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="421" y="82" width="598" height="735" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1589599713939" />
   </component>
   <component name="masterDetails">
     <states>
